@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css"> 
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | Expenses chart component</title>
+
+
+</head>
+<body>
+
+  <div class="main-div">
+    <div class="block orange">
+      <div>
+        <p>My balance</p>
+        <p class="bold-text" style="margin-top: 4%;">$921.48</p>
+      </div>
+
+      <div id="image">
+        <img src="./images/logo.svg" alt="logi picture"/>
+      </div>
+    </div>
+
+    <div class="block white">
+
+      <div>
+        <p class="bold-text">Spending - Last 7 days</p>
+      </div>
+
+      <div class="chart">
+        <div class="mon chart-section">
+          <div class="chart-info">
+            <p id="1value">$22.42</p>
+          </div>
+          <div id="1day" class="marker"></div>
+          <p>mon</p>
+        </div>
+
+        <div class="tue chart-section">
+          <div class="chart-info">
+            <p id="2value">$34.15</p>
+          </div>
+          <div id="2day" class="marker"></div>
+          <p>tue</p>
+        </div>
+
+        <div class="wed chart-section">
+          <div class="chart-info">
+            <p id="3value">$52.36</p>
+          </div>
+          <div id="3day" class="marker" style="background-color: hsl(186, 34%, 60%);"></div>
+          <p>wed</p>
+        </div>
+
+        <div class="thu chart-section">
+          <div class="chart-info">
+            <p id="4value">$31.07</p>
+          </div>
+          <div id="4day" class="marker"></div>
+          <p>thu</p>
+        </div>
+
+        <div class="fri chart-section">
+          <div class="chart-info">
+            <p id="5value">$26.38</p>
+          </div>
+          <div id="5day" class="marker"></div>
+          <p>fri</p>
+        </div>
+
+        <div class="sat chart-section">
+          <div class="chart-info">
+            <p id="6value">$48.12</p>
+          </div>
+          <div id="6day" class="marker"></div>
+          <p>sat</p>
+        </div>
+
+        <div class="sun chart-section">
+          <div class="chart-info">
+            <p id="7value">$29.65</p>
+          </div>
+          <div id="7day" class="marker"></div>
+          <p>sun</p>
+        </div>
+
+      </div>
+
+      
+      <hr style="border-top: 1px solid hsl(0, 1%, 79%); width: 100%;"><hr/>
+
+      <div class="summary-chart">
+        <div>
+          <p style="color: hsl(0, 1%, 79%)">Total this month</p>
+          <p class="bold-text" style="font-size: 3rem">$478.33</p>
+        </div>
+
+        <div style="text-align: right; margin-top: auto;">
+          <p class="bold-text" style="font-size: 1rem;">+2.4%</p>
+          <p style="color: hsl(0, 1%, 79%)">from last month</p>
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Szymon Maciejewski</a>.
+    </div>
+  </footer>
+  
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script src="script.js" charset="utf-8"></script>
+</body>
+</html>
